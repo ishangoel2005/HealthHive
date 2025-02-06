@@ -77,7 +77,6 @@ def predict_diabetes():
     
         result = f"Error in processing: {e}"
     
-    
     return render_template('diabetes.html', prediction_text=result)
 
 @app.route('/predict_heart', methods=['POST'])
@@ -113,7 +112,6 @@ def predict_heart():
     
         result = f"Error in processing: {e}"
     
-
     return render_template('heart.html', prediction_text=result)
 
 if __name__ == '__main__':
